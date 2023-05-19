@@ -6,6 +6,7 @@ const taskController = require("./controllers/taskController");
 connectDB();
 
 app.use(express.json());
+const port = process.env.PORT || 3000;
 
 // Create a task
 app.post("/tasks", async (req, res) => {
@@ -60,6 +61,6 @@ app.delete("/tasks/:taskId", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Example app listening on port 3000!");
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
