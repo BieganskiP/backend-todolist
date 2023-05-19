@@ -43,13 +43,13 @@ Before running the API, ensure you have the following installed:
 
 ## API Endpoints
 
-# POST /tasks: Create a new task.
+### POST /tasks: Create a new task.
 
-# GET /tasks: Get all tasks.
+### GET /tasks: Get all tasks.
 
-# PUT /tasks/:taskId: Update a task by ID.
+### PUT /tasks/:taskId: Update a task by ID.
 
-# DELETE /tasks/:taskId: Delete a task by ID.
+### DELETE /tasks/:taskId: Delete a task by ID.
 
 For detailed information on the API endpoints, refer to the API Documentation.
 
