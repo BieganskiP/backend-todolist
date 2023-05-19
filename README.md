@@ -67,59 +67,70 @@ OpenAPI Specification - Open standard for defining and documenting APIs.
 
 # Documentation
 
-API Endpoints
-Create a Task
-Method: POST
-URL: /tasks
-Request Body:
-title (string, required): The title of the task.
-description (string): The description of the task.
-completed (boolean): The completion status of the task.
-deadline (string): The deadline of the task.
-urgency (string): The urgency level of the task.
-Success Response:
-Status Code: 201
-Response Body: JSON object representing the created task.
-Error Response:
-Status Code: 500
-Response Body: JSON object with an error message.
-Get All Tasks
-Method: GET
-URL: /tasks
-Success Response:
-Status Code: 200
-Response Body: JSON array containing all tasks.
-Error Response:
-Status Code: 500
-Response Body: JSON object with an error message.
-Update a Task
-Method: PUT
-URL: /tasks/:taskId
-URL Parameters:
-taskId (string, required): The ID of the task to update.
-Request Body: JSON object containing the fields to update.
-Success Response:
-Status Code: 200
-Response Body: JSON object representing the updated task.
-Error Response:
-Status Code: 500
-Response Body: JSON object with an error message.
-Delete a Task
-Method: DELETE
-URL: /tasks/:taskId
-URL Parameters:
-taskId (string, required): The ID of the task to delete.
-Success Response:
-Status Code: 200
-Response Body: JSON object representing the deleted task.
-Error Response:
-Status Code: 500
-Response Body: JSON object with an error message.
-Running the API
-Ensure that you have Node.js and MongoDB installed.
-Connect to your MongoDB database by setting up the appropriate environment variables.
-Start the API server by running the command node app.js or npm start.
-The API will be accessible at http://localhost:3000.
+## API Endpoints
+
+### Create a Task
+
+- Method: POST
+- URL: /tasks
+- Request Body:
+  - title (string, required): The title of the task.
+  - description (string): The description of the task.
+  - completed (boolean): The completion status of the task.
+  - deadline (string): The deadline of the task.
+  - urgency (string): The urgency level of the task.
+- Success Response:
+  - Status Code: 201
+  - Response Body: JSON object representing the created task.
+- Error Response:
+  - Status Code: 500
+  - Response Body: JSON object with an error message.
+
+### Get All Tasks
+
+- Method: GET
+- URL: /tasks
+- Success Response:
+  - Status Code: 200
+  - Response Body: JSON array containing all tasks.
+- Error Response:
+  - Status Code: 500
+  - Response Body: JSON object with an error message.
+
+### Update a Task
+
+- Method: PUT
+- URL: /tasks/:taskId
+- URL Parameters:
+  - taskId (string, required): The ID of the task to update.
+- Request Body: JSON object containing the fields to update.
+- Success Response:
+  -Status Code: 200
+  - Response Body: JSON object representing the updated task.
+- Error Response:
+  -Status Code: 500
+  -Response Body: JSON object with an error message.
+
+### Delete a Task
+
+- Method: DELETE
+- URL: /tasks/:taskId
+- URL Parameters:
+  - taskId (string, required): The ID of the task to delete.
+- Success Response:
+  - Status Code: 200
+  - Response Body: JSON object representing the deleted task.
+- Error Response:
+  - Status Code: 500
+  - Response Body: JSON object with an error message.
+
+## Running the API
+
+1. Ensure that you have Node.js and MongoDB installed.
+2. Connect to your MongoDB database by setting up the appropriate environment variables.
+3. Start the API server by running the command node app.js or npm start.
+4. The API will be accessible at http://localhost:3000.
+
 Please note that you may need to customize the code and configuration based on your specific needs and environment.
 
 Feel free to further document the API with additional details, such as authentication, request/response examples, and any other relevant information for your users.
