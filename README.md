@@ -132,5 +132,3 @@ OpenAPI Specification - Open standard for defining and documenting APIs.
 4. The API will be accessible at http://localhost:3000.
 
 Please note that you may need to customize the code and configuration based on your specific needs and environment.
-
-Feel free to further document the API with additional details, such as authentication, request/response examples, and any other relevant information for your users.
