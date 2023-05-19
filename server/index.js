@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const connectDB = require("./db");
 const taskController = require("./controllers/taskController");
+const cors = require("cors");
 
 connectDB();
 
 app.use(express.json());
+app.use(cors());
 const port = process.env.PORT || 3000;
 
 // Create a task
